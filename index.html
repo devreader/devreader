@@ -54,38 +54,68 @@
           <p>Основное преимущество и главная цель проекта - портативность и удобство.</p>
           <p>Пользователь, который читает статью в DevReader, видит только текст справочника. Никакой рекламы, никакой <b>ненужной</b> второстепенной информации и никакой &quot;воды&quot; в статьях. Всё просто!</p>
           <p class="crx-alert crx-alert_info"><em>Статья</em> - это каждая отдельная страница по какому-либу языку программирования или инструменту.</p>
+          <br>
+          <div class="dr-card_banner" onclick="location.href='https://devreader.github.io'" title="Нажмите, чтобы перейти к справочнику">
+            <h4>Перейти к статьям &rsaquo;</h4>
+            <p></p>
+          </div>
         </div>
         <div class="col-12">
           <h2>Приложения</h2>
           <img src="assets/ic/ic_applications.webp" width="70px" style="float: right; margin: 0 0 0 1em;" alt="Иконка приложений DevReader" title="Мобильные клиенты и прочие приложения">
           <p>DevReader доступен с любого устройства, где возможна работа более-менее современного браузера. Скорее всего и вы сейчас читаете это через браузер.</p>
-          <p>Однако для более удобного чтения у проекта есть приложения (&quot;клиенты&quot;), с помощью которых посещение справочника становится удобнее.</p>
+          <p>Однако для более удобного чтения у проекта <span title="По сути есть только одно (пока одно!) приложение)">есть приложения</span> (&quot;клиенты&quot;), с помощью которых посещение справочника становится удобнее.</p>
           <p>Также через клиент доступны многие другие возможности, недоступные через браузер.</p>
-          <p class="crx-alert crx-alert_info">На данный момент доступен только клиент для Android. Десктопный клиент под ОС Microsoft Windows находится пока на проектировании.</p>
-          <p class="crx-alert crx-alert_warning">Разработка клиента под iOS / iPadOS не планируется из-за отсутствия разработчиков с опытом разработки ПО под данные платформы. Такая же инстория и про macOS.</p>
-          <p><button class="crx-button" disabled>Перейти</button></p>
         </div>
-        <div class="col-12" style="background: #b71c1c;">
-          <h2>Test</h2>
-          <p><i>app-android/ota/beta.json</i></p>
-          <p>
-            <samp>
-              Version Name: <b id="versionName"></b><br>
-              Version Code: <b id="versionCode"></b><br>
-              Update Message: <b id="updateMessage"></b><br>
-              APK URL: <b id="apkUrl"></b><br>
-              Changelog URL: <b id="changelogUrl"></b><br>
-            </samp>
-          </p>
+        <div class="col-md-6">
+          <h3>DevReader для Android</h3>
+          <img src="assets/ic/ic_android.webp" width="70px" style="float: right; margin: 0 0 0 1em;" alt="Иконка Android" title="Мобильный клиент DevReader для Android">
+          <p>Разработка мобильного приложения для Android была начата примерно в то же время, когда был запущен проект DevReader.</p>
+          <img src="assets/mockup/client_android_1.webp" width="140px" style="float: left; margin: 0 1em 0 0;" alt="Mockup DevReader для Android" title="Мобильный клиент DevReader для Android">
+          <p>Android, в силу дешевизны и относительной простоты разработки приложений, был выбран в качестве основной платформы.</p>
+          <p>На данный момент приложение находится на стадии предварительного публичного тестирования и в релиз выйдет не раньше релиза проекта.</p>
+          <p>Уже сейчас можно бесплатно и без подписки загрузить предварительную версию для публичного тестирования и установить приложение на своё устройство.</p>
+          <p class="crx-alert crx-alert_warning">DevReader для Android на данный момент находится на стадии разработки и в работе приложения могут наблюдаться недочеты и проблемы. Будем рады обратной связи и логам ошибок, если они встречаются.</p>
+          <br>
+          <div class="dr-card_banner" id="android_bannerBlock">
+            <h4>DevReader <span id="android_currentVersion"></span></h4>
+            <p id="android_updateMessage"></p>
+            <p class="crx-text--muted">Нажмите на это сообщение, чтобы перейти на страницу загрузки.</p>
+          </div>
+        </div>
+        <div class="col-md-6" disabled>
+          <div class="row no-gutters">
+            <div class="col-12">
+              <h3>DevReader для iOS</h3>
+              <img src="assets/ic/ic_apple_ios.webp" width="70px" style="float: right; margin: 0 0 0 1em;" alt="Иконка iOS" title="Мобильный клиент DevReader для iOS">
+              <p>На данный момент клиента DevReader нет для устройств под управлением операционной системой Apple iOS. Тут очень много факторов, главный из которых - нет разработчика с опытом.</p>
+              <p>Сейчас ведётся проектирование возможного клиента, разработанного на фреймворке Flutter на языке Dart с кросс-платформенной поддержкой сборки и для Android.</p>
+              <p></p>
+            </div>
+            <div class="col-12">
+              <h3>DevReader для Windows 10</h3>
+              <img src="assets/ic/ic_microsoft_windows10.webp" width="70px" style="float: right; margin: 0 0 0 1em;" alt="Иконка Windows 10" title="Мобильный клиент DevReader для Windows 10">
+              <p>DevReader для ОС Microsoft Windows 10 на данный момент находится на стадии прототипирования и пока нет никаких предварительных сборок.</p>
+              <p>Разработку клиента для Windows 10 планируется начать в ближайщее время, но точных дат пока никто дать не может.</p>
+            </div>
+            <div class="col-12">
+              <h3>DevReader для Windows 7</h3>
+              <img src="assets/ic/ic_microsoft_windows7.webp" width="70px" style="float: right; margin: 0 0 0 1em;" alt="Иконка Windows 7" title="Мобильный клиент DevReader не на UWP">
+              <p><b>В чем разница от версией для Windows 10 и почему бы не использовать одно приложение, чем писать несколько?</b> Резонный и логичный вопрос. Дело в том, что приложения для Windows 10 (в т.ч. и Mobile) разрабатываются на UWP (Универсальная платформа Windows), которая не имеет обратной совместимости с более старыми версиями ОС.</p>
+              <p>Для Windows 7 клиент будет написан на win32, который поддерживается также в Windows 8, 8.1 и в том же Windows 10, однако в Windows 10 предпочтения отдаются именно UWP-приложениям.</p>
+              <p class="crx-alert crx-alert_info">Вероятность того, что разработка приложения для Windows 10 начнется выше, в отличии от приложения для более старых версии ОС. Это всё пока планы. Следите за новостями в нашем Telegram.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <footer crx-footer="centered">
+      <p><a href="https://t.me/devreader">Telegram</a> / <a href="https://t.me/devreader">GitHub</a></p>
       <p>Запрещено любое коммерческое использование материалов, в том числе воспроизведение текстов статей или их фрагментов с целью коммерческой реализации права доступа к указанным материалам.</p>
     </footer>
 
-    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/main_android.js"></script>
 
   </body>
 </html>
